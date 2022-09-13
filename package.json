@@ -1,7 +1,6 @@
 {
   "name": "koishi-plugin-nonsense",
   "description": "Generate random sentenses",
-  "private": true,
   "version": "1.0.0",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -9,14 +8,39 @@
     "lib",
     "dist"
   ],
+  "author": "Shigma <shigma10826@gmail.com>",
   "license": "MIT",
-  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koishijs/koishi-plugin-nonsense.git"
+  },
+  "bugs": {
+    "url": "https://github.com/koishijs/koishi-plugin-nonsense/issues"
+  },
+  "homepage": "https://github.com/koishijs/koishi-plugin-nonsense",
+  "scripts": {
+    "build": "atsc -b"
+  },
+  "koishi": {
+    "description": {
+      "en": "Generate random sentenses",
+      "zh": "生成随机句子"
+    }
+  },
   "keywords": [
+    "bot",
     "chatbot",
     "koishi",
-    "plugin"
+    "plugin",
+    "nonsense"
   ],
   "peerDependencies": {
-    "koishi": "^4.9.1"
+    "koishi": "^4.8.4"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.45",
+    "atsc": "^1.1.2",
+    "koishi": "^4.9.1",
+    "typescript": "^4.8.3"
   }
 }

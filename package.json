@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-nonsense",
   "description": "Generate random sentenses",
-  "version": "1.0.0",
+  "version": "1.0.7",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
@@ -22,6 +22,7 @@
     "build": "atsc -b"
   },
   "koishi": {
+    "browser": true,
     "description": {
       "en": "Generate random sentenses",
       "zh": "生成随机句子"
